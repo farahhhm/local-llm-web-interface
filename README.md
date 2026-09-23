@@ -33,5 +33,17 @@ Static documentation asset illustrating the live rendered Gradio user interface,
 | **Target Model** | Qwen | `qwen:0.5b` | 500M parameter open-weights language model |
 
 ---
+##  System Architecture
++------------------+         HTTP POST         +--------------------+
+|  Gradio Web UI   | ------------------------> |   FastAPI Server   |
+| (Browser Interface)                          |   (Uvicorn Host)   |
++------------------+                           +--------------------+
+                                                        |
+                                                        | REST API
+                                                        v
+                                               +--------------------+
+                                               |   Ollama Server    |
+                                               | (Local qwen:0.5b)  |
+                                               +--------------------+
 
 
