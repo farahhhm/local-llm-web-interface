@@ -34,4 +34,4 @@ Static documentation asset illustrating the live rendered Gradio user interface,
 
 ---
 
-##  Architecture & Data Flow Diagram
+
